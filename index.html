@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TopEdge Designs — Minimal Clean UI</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css"> 
+
+<!-- Font Awesome CDN -->
+<link
+  rel="stylesheet"
+  href="https://fontawesome.com/icons/pen-nib?f=sharp-duotone&s=solid"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer">
+
+</head>
+<body>
+
+  <!-- Sticky Logo -->
+
+
+  <div class="gradient-anim" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <a href="#top"><img src="logo.png" alt="TopEdge Designs Logo" class="sticky-logo" id="logo"></a>
+        
+      </div>
+
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#media">Work</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+
+      <button class="hamburger" aria-label="Open menu" id="hambBtn" style="background:transparent;border:0;color:var(--text);font-size:22px"><i class="fa fa-bars"></i></button>
+    </header>
+
+      
+
+    <!-- mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="#services" onclick="toggleMenu()">Services</a>
+      <a href="#gallery" onclick="toggleMenu()">Gallery</a>
+      <a href="#testimonials" onclick="toggleMenu()">Testimonials</a>
+      <a href="#contact" onclick="toggleMenu()">Contact</a>
+    </div>
+
+    <!-- mobile drawer -->
+  <aside class="mobile-drawer" id="drawer" aria-hidden="true">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px">
+      <div style="display:flex;gap:12px;align-items:center"><div class="mark"></div><strong>TopEdge Designs</strong></div>
+      <button id="closeDrawer" style="background:transparent;border:0;color:var(--text);font-size:20px"><i class="fa fa-times"></i></button>
+    </div>
+    <a href="#services">Services</a>
+    <a href="#media">Work</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </aside>
+
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-left fade-in">
+        <h1>Elevate Your Vision</h1>
+        <p>Minimal. Modern. Clean design with trend-forward UI/UX and motion.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:flex-start">
+          <a class="explore" href="#services">Explore Services</a>
+        </div>
+        
+      </div>
+
+      <div class="hero-right fade-in">
+        <div class="gem" aria-hidden="true">
+          <!-- Decorative gem SVG -->
+          <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0" stop-color="#8a2be2"/>
+                <stop offset="1" stop-color="#b57af7"/>
+              </linearGradient>
+            </defs>
+            <g transform="translate(50 50)">
+              <path d="M205 0 L345 68 L345 200 L200 345 L55 200 L55 68 Z" fill="url(#g1)" opacity="0.96" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <div class="features">
+          <div class="feature"><i class="fa-regular fa-lightbulb"></i><span>Creativity</span></div>
+          <div class="feature"><i class="fa-solid fa-rocket"></i><span>Fast Delivery</span></div>
+          <div class="feature"><i class="fa-solid fa-tags"></i><span>Best Price</span></div>
+          <div class="feature"><i class="fa-regular fa-thumbs-up"></i><span>Professional Quality</span></div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Media section: left text, right autoplay video -->
+    <section id="media" class="media reveal">
+
+      <div class="video-wrap">
+        <!-- The user asked for a real sample video; this uses an openly available sample as fallback. You can replace the src with your own video file. -->
+        <video autoplay muted loop playsinline preload="auto">
+          <source src="vd.mp4" type="video/mp4">
+          <!-- If you host locally, replace the above with: ./assets/sample.mp4 -->
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+    </section>
+
+   
+
+<!--service 2-->
+ <!-- Services -->
+    <section id="services" class="reveal">
+      <h2 style="margin:0 0 12px">Our Services</h2>
+      <div class="services">
+        <div class="service-card">
+          <div class="icon"><i class="fa-solid fa-up-right-from-square"></i></div>
+          <div>
+            <h4>Branding & Visual Identity</h4>
+            <p>Logo, style guides & brand assets</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="icon"><i class="fa-solid fa-vector-square"></i></div>
+          <div>
+            <h4>Graphic Design & Print Collateral</h4>
+            <p>Posters, brochures, banners</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="icon"><i class="fa-solid fa-play"></i></div>
+          <div>
+            <h4>Social Media Strategy & Content</h4>
+            <p>Reels, posts, short promos</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="icon"><i class="fa-solid fa-code"></i></div>
+          <div>
+            <h4>Web Design & Development</h4>
+            <p>Responsive websites & landing pages</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="icon"><i class="fa-solid fa-clapperboard"></i></div>
+          <div>
+            <h4>Video Content Creation</h4>
+            <p>Editing, motion graphics & promos</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div>
+            <h4>Campaign Management & Analytics</h4>
+            <p>Ads, insights & reporting</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--testimon-->
+
+<div class="testimonial-section">
+  <h2>What Our Clients Say</h2>
+  <div class="testimonial-slider">
+    <div class="testimonial-track">
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Client 1">
+        <p>"Amazing service! The team was professional and delivered beyond expectations."</p>
+        <h3>- Sarah K.</h3>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Client 2">
+        <p>"Top-notch quality and excellent communication. Highly recommended."</p>
+        <h3>- James L.</h3>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Client 3">
+        <p>"They transformed our ideas into reality. Couldn't be happier!"</p>
+        <h3>- Emily R.</h3>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Client 4">
+        <p>"Professional, reliable, and extremely creative. A pleasure to work with."</p>
+        <h3>- Michael B.</h3>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="Client 5">
+        <p>"Exceeded our expectations in every way. Truly exceptional service."</p>
+        <h3>- Olivia W.</h3>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="Client 6">
+        <p>"A very professional team with amazing creativity and attention to detail."</p>
+        <h3>- Daniel H.</h3>
+      </div>
+    </div>
+  </div>
+  <div class="dots">
+    <div class="dot active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+</div>
+
+<!--testimonal 2-->
+<!-- Testimonials -->
+    <section id="testimonials" class="testimonials reveal">
+      <h2>What clients say</h2>
+      <div class="test-wrap">
+        <div class="test-list" id="testList">
+          <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>TopEdge Designs delivered a vibrant brand kit for our cafe. Fast turnaround and excellent communication.</p>
+            <div class="author"><div class="avatar">RK</div><div><strong>Ria K.</strong><br><small class="muted">Cafe Owner</small></div></div>
+          </div>
+          <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>Creative, reliable and value-driven. Their social media visuals helped our engagement grow fast.</p>
+            <div class="author"><div class="avatar">AS</div><div><strong>Ashwin S.</strong><br><small class="muted">Marketing Lead</small></div></div>
+          </div>
+          <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p>Excellent animations and attention to detail. The landing page increased conversions for us.</p>
+            <div class="author"><div class="avatar">MN</div><div><strong>Meera N.</strong><br><small class="muted">Founder</small></div></div>
+          </div>
+          
+        </div>
+
+        
+
+        <div class="test-controls" id="testDots"></div>
+      </div>
+    </section>
+
+
+<!-- Contact -->
+    <section id="contact" class="contact reveal">
+      <div>
+        <h3>Get in touch</h3>
+        <p style="color:var(--muted)">Tell us about your project and we'll reply within 24 hours.</p>
+       
+      </div>
+
+      <form id="contactForm" onsubmit="return false;">
+        <input type="text" id="name" placeholder="Your name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="subject" placeholder="Subject" required>
+        <textarea id="message" rows="4" placeholder="Message" required></textarea>
+        <button id="sendBtn">Send message</button>
+      </form>
+    </section>
+
+
+
+
+
+
+<!--footer-->
+
+<footer class="site-footer" role="contentinfo">
+
+  <!-- Waves -->
+  <div class="wave-wrap" aria-hidden="true">
+    <div class="wave layer-1">
+      <svg viewBox="0 0 1440 320"><path fill="var(--purple-1)" d="M0,160 C120,200 240,120 360,144 C480,168 600,256 720,240 C840,224 960,96 1080,96 C1200,96 1320,160 1440,176 L1440 320 L0 320 Z"></path></svg>
+    </div>
+    <div class="wave layer-2">
+      <svg viewBox="0 0 1440 320"><path fill="var(--purple-2)" d="M0,192 C160,256 320,128 480,160 C640,192 800,320 960,288 C1120,256 1280,128 1440,160 L1440 320 L0 320 Z"></path></svg>
+    </div>
+    <div class="wave layer-3">
+      <svg viewBox="0 0 1440 320"><path fill="var(--purple-3)" d="M0,224 C80,160 240,96 360,128 C480,160 720,256 960,240 C1200,224 1320,192 1440,176 L1440 320 L0 320 Z"></path></svg>
+    </div>
+    <div class="wave layer-4">
+      <svg viewBox="0 0 1440 320"><path fill="var(--purple-4)" d="M0,96 C160,144 320,48 480,112 C640,176 800,224 960,192 C1120,160 1280,96 1440,128 L1440 320 L0 320 Z"></path></svg>
+    </div>
+  </div>
+
+  <!-- Footer Content -->
+  <div class="animated-footer">
+    <div class="footer-content">
+      <ul class="social-icon">
+        <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-figma"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-dribbble"></ion-icon></a></li>
+      </ul>
+
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <p>&copy; <span id="year"></span> All rights reserved.</p>
+    </div>
+  </div>
+
+  
+</footer>
+
+<!--footer js-->
+
+<!-- Icons & Year Script -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <!--end footer js-->
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+  const track = document.querySelector('.testimonial-track');
+  const dots = document.querySelectorAll('.dot');
+  const total = dots.length;
+  let index = 0;
+
+  function updateSlider() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+  }
+
+  function nextSlide() {
+    index = (index + 1) % total;
+    updateSlider();
+  }
+
+  // Auto slide every 4 seconds
+  let slideInterval = setInterval(nextSlide, 4000);
+
+  // Click on dots
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      index = i;
+      updateSlider();
+      clearInterval(slideInterval);
+      slideInterval = setInterval(nextSlide, 4000);
+    });
+  });
+</script>
+
+
+
+<script>
+// Scroll reveal animation
+const cards = document.querySelectorAll(".service-card");
+
+const revealOnScroll = () => {
+  const triggerBottom = window.innerHeight * 0.85;
+  cards.forEach((card, i) => {
+    const cardTop = card.getBoundingClientRect().top;
+    if (cardTop < triggerBottom) {
+      setTimeout(() => card.classList.add("visible"), i * 100);
+    }
+  });
+};
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+</script>
+
+
+
+
+    
+
+  <script>
+    // Mobile drawer
+    const hambBtn = document.getElementById('hambBtn');
+    const drawer = document.getElementById('drawer');
+    const closeDrawer = document.getElementById('closeDrawer');
+    hambBtn && hambBtn.addEventListener('click', ()=>{drawer.classList.add('open');drawer.setAttribute('aria-hidden','false')});
+    closeDrawer && closeDrawer.addEventListener('click', ()=>{drawer.classList.remove('open');drawer.setAttribute('aria-hidden','true')});
+
+    
+    
+
+    // Ensure video plays on mobile (user gesture requirements): video is autoplay muted so usually OK.
+
+    // Accessibility: close drawer with escape
+    document.addEventListener('keydown', (e)=>{if(e.key==='Escape') drawer.classList.remove('open')});
+
+
+  // Fade-in on scroll using IntersectionObserver
+  const observers = document.querySelectorAll('.fade-in');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('show');
+        io.unobserve(entry.target);
+      }
+    });
+  }, {threshold: 0.12});
+  observers.forEach(el => io.observe(el));
+
+  // Accessibility / keyboard: close menu on escape
+  document.addEventListener('keydown', e => {
+    if(e.key === 'Escape'){
+      mobileMenu.classList.remove('open');
+    }
+  });
+
+  // Example: dynamically add images to gallery (keeps grid auto-adjust)
+  // If you have an array of new image URLs you can add like this:
+  // const galleryGrid = document.getElementById('galleryGrid');
+  // ['url1.jpg','url2.jpg'].forEach(src => {
+  //   const d = document.createElement('div'); d.className='gallery-item';
+  //   const img = document.createElement('img'); img.src = src;
+  //   d.appendChild(img); galleryGrid.appendChild(d);
+  // });
+
+  // make hero gem pulse subtly
+  const gem = document.querySelector('.gem');
+  if(gem){
+    let t=0;
+    setInterval(()=> {
+      t = (t+0.02);
+      gem.style.transform = `translateY(${Math.sin(t)*6}px) rotate(${t*6}deg)`;
+    }, 40);
+  }
+
+
+
+
+
+
+
+// Testimonial dots & auto-scroll
+    const list = document.getElementById('testList');
+    const dotsWrap = document.getElementById('testDots');
+    const items = list.querySelectorAll('.testimonial');
+    let idx = 0;
+    items.forEach((it,i)=>{
+      const dot = document.createElement('div');dot.className='dot'+(i===0?' active':'');dotsWrap.appendChild(dot);
+      dot.addEventListener('click',()=>{idx=i;go();});
+    });
+    function go(){
+      const w = items[0].offsetWidth + 18; // gap
+      list.scrollTo({left: idx * w, behavior:'smooth'});
+      dotsWrap.querySelectorAll('.dot').forEach((d,ii)=>d.classList.toggle('active',ii===idx));
+    }
+    setInterval(()=>{idx=(idx+1)%items.length;go()},4000);
+
+    
+
+    // Contact form (basic UX, no server)
+    const form = document.getElementById('contactForm');
+    const sendBtn = document.getElementById('sendBtn');
+    sendBtn.addEventListener('click',()=>{
+      sendBtn.disabled = true; sendBtn.textContent = 'Sending...';
+      // Simulate send
+      setTimeout(()=>{alert('Message sent! We will contact you soon.');sendBtn.disabled=false;sendBtn.textContent='Send message';form.reset()},1000);
+    });
+
+    // Accessibility: close drawer with escape
+    document.addEventListener('keydown', (e)=>{if(e.key==='Escape') drawer.classList.remove('open')});
+
+</script>
+
+
+
+
+</body>
+</html>
